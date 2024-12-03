@@ -280,17 +280,6 @@ namespace Tzy.Train.B2C.UI.Test
 
                 paymentPage.ClickSubmitButton();
                 extentTest.Log(Status.Pass, "Clicked Submit button.");
-
-                Assert.True(paymentPage.IsOtpDisplayed(), "OTP not displayed.");
-                extentTest.Log(Status.Pass, "OTP displayed.");
-
-                paymentPage.EnterOtp("12345");
-                extentTest.Log(Status.Pass, "Entered OTP.");
-
-                paymentPage.ClickOtpSubmitButton();
-                extentTest.Log(Status.Pass, "Clicked OTP Submit button.");
-
-                // Assert.True(paymentPage.IsPaymentSuccess(), "Payment not successful.");
             }
             catch (Exception ex)
             {

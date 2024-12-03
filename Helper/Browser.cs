@@ -25,30 +25,6 @@ namespace Tzy.Train.B2C.UI
 				new DriverManager().SetUpDriver(new ChromeConfig());
 				WEBDRIVER = new ChromeDriver();
 				WEBDRIVER.Manage().Window.Maximize();
-
-				#region LambdaTest Configuration
-				// ChromeOptions capabilities = new ChromeOptions();
-				// capabilities.BrowserVersion = "130";
-				// Dictionary<string, object> ltOptions = new Dictionary<string, object>();
-				// // ltOptions.Add("username", LT_USERNAME);
-				// // ltOptions.Add("accessKey", LT_ACCESS_KEY);
-				// ltOptions.Add("username", "sagartraveazy");
-				// ltOptions.Add("accessKey", "OR4AXXsFczwobOGINGsWUpp90b7JfOJJpO2wfTgWls3dTMpwZz");
-				// ltOptions.Add("geoLocation", "IN");
-				// ltOptions.Add("visual", true);
-				// ltOptions.Add("video", true);
-				// ltOptions.Add("platformName", "Windows 10");
-				// ltOptions.Add("timezone", "Kolkata");
-				// ltOptions.Add("build", "1");
-				// ltOptions.Add("project", "Tzy.Train.B2C.UI");
-				// ltOptions.Add("console", "true");
-				// ltOptions.Add("networkThrottling", "Regular 4G");
-				// ltOptions.Add("w3c", true);
-				// ltOptions.Add("plugin", "c#-c#");
-				// ltOptions.Add("tunnel", true);
-				// capabilities.AddAdditionalOption("LT:Options", ltOptions);
-				#endregion
-
 			}
 			else if (browsername == "firefox")
 			{
